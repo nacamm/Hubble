@@ -4,7 +4,7 @@ let fileSystem = require('fs');
 
 exports.retrieve_a_image = function (req, res) {
     let fileName = req.params.fileName;
-    let filePath = "C:\\Users\\Nate\\WebstormProjects\\NatesApp\\static\\images\\" + fileName + ".jpg";
+    let filePath = "C:\\Users\\Nate\\WebstormProjects\\NateHubble\\static\\images\\" + fileName + ".jpg";
     fileSystem.exists(filePath, function (exists) {
         if (exists) {
             res.writeHead(200, {
